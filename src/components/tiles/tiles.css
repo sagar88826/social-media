@@ -1,0 +1,72 @@
+.main__posts {
+  /* border: 1px solid; */
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+.main__post-box {
+  position: absolute;
+  height: 55rem;
+  width: 55%;
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.301);
+  top: 5rem;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.main__post-box--1 {
+  transform: rotate(0deg);
+  background-color: rgb(255, 208, 213);
+}
+.main__post-box--2 {
+  transform: rotate(5deg);
+  background-color: rgb(161, 195, 211);
+}
+.main__post-box--3 {
+  transform: rotate(10deg);
+  background-color: rgb(81, 154, 243);
+}
+.main__post-box--4 {
+  transform: rotate(-5deg);
+  background-color: rgb(24, 20, 19);
+}
+.main__post-box--5 {
+  transform: rotate(-10deg);
+  background-color: rgb(244, 120, 165);
+}
+.main__user {
+  /* border: 1px solid; */
+  height: 8%;
+  margin-bottom: 1rem;
+}
+.main__dp {
+  width: 8.5%;
+  float: left;
+}
+.main__username {
+  font-family: "Poppins";
+  font-weight: 700;
+  margin: 0.725rem 0 0 1rem;
+  float: left;
+}
+.main__content {
+  outline: 0.5rem solid;
+  height: 80%;
+  margin-bottom: 1rem;
+}
+.main__post-image {
+  height: 100%;
+  width: 100%;
+}
+
+.main__interaction {
+  margin: 2rem auto;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+}
+.main__icon {
+  font-size: 2rem;
+}
+.main__icon:not(:first-child) {
+  padding-left: 5rem;
+}

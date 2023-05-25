@@ -1,0 +1,79 @@
+.heading-primary {
+  font-family: "Great Vibes", cursive;
+  font-weight: 700;
+}
+.heading-primary--italic {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+.navigation {
+  margin-bottom: 5rem;
+}
+.navigation__logo {
+  height: 5rem;
+  width: 5rem;
+}
+.navigation__option-box {
+  float: right;
+}
+.navigation__list {
+  display: inline-block;
+  padding: 2rem;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+.main {
+  display: flex;
+  height: 80vh;
+  margin: 0 auto;
+}
+.main__intro {
+  /* border: 1px solid; */
+  padding: 15rem 15rem 15rem 25rem;
+  text-transform: uppercase;
+  width: 50%;
+}
+.main__form {
+  /* border: 1px solid; */
+  height: 30rem;
+  width: 80%;
+}
+.main__input {
+  border: 1px solid rgba(43, 43, 43, 0.555);
+  border-radius: 0.2rem;
+  height: 4rem;
+  width: 70%;
+  display: block;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.356);
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.main__submit-button {
+  height: 3.5rem;
+  width: 70%;
+  border-radius: 1rem;
+  border: 1px solid rgba(43, 43, 43, 0.555);
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(0, 118, 253, 0.774);
+}
+.category-1 {
+  border: 1px solid;
+  height: 80vh;
+  margin-left: 10rem;
+  background-color: yellow;
+}
+.categories-2 {
+  height: 80vh;
+  border: 1px solid;
+  display: block;
+  margin: 0 auto;
+  display: flex;
+  justify-content: right;
+}
+.clear-fix {
+  content: "";
+  display: table;
+  clear: both;
+}
