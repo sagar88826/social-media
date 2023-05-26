@@ -7,8 +7,29 @@
   font-size: 5rem;
   text-transform: capitalize;
 }
+.heading-secondary {
+  display: inline-block;
+  font-family: "Poppins";
+  font-size: 6rem;
+}
+.heading-secondary--position-right {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-130%, -50%);
+  animation: fadeIn 1.5s 1s;
+  animation-fill-mode: backwards;
+}
+.heading-secondary--position-left {
+  width: 50%;
+  padding: 25rem 0 0 25rem;
+  animation: fadeIn 1.5s 1s;
+  animation-fill-mode: backwards;
+}
 .navigation {
   margin-bottom: 5rem;
+  animation: fadeUp 1s ease-in-out 0.5s;
+  animation-fill-mode: backwards;
 }
 .navigation__logo {
   height: 5rem;
@@ -25,17 +46,17 @@
 }
 .main {
   display: flex;
-  height: 80vh;
   margin: 0 auto;
+  height: 80rem;
 }
 .main__intro {
-  /* border: 1px solid; */
   padding: 15rem 15rem 15rem 25rem;
   text-transform: uppercase;
   width: 50%;
+  animation: fadeIn 1.5s 1s;
+  animation-fill-mode: backwards;
 }
 .main__form {
-  /* border: 1px solid; */
   height: 30rem;
   width: 80%;
 }
@@ -43,7 +64,7 @@
   border: 1px solid rgba(43, 43, 43, 0.555);
   border-radius: 0.2rem;
   height: 4rem;
-  width: 70%;
+  width: 28rem;
   display: block;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.356);
   margin: 1rem auto;
@@ -51,29 +72,34 @@
 }
 .main__submit-button {
   height: 3.5rem;
-  width: 70%;
+  width: 28rem;
   border-radius: 1rem;
   border: 1px solid rgba(43, 43, 43, 0.555);
   display: block;
   margin: 0 auto;
   background-color: rgba(0, 118, 253, 0.774);
 }
-.category-1 {
-  border: 1px solid;
-  height: 80vh;
+
+.section__category--1 {
+  height: 70rem;
+  position: relative;
+  transform: translateX(2.5%);
   margin-left: 10rem;
-  background-color: yellow;
 }
-.categories-2 {
-  height: 80vh;
-  border: 1px solid;
-  display: block;
-  margin: 0 auto;
+
+.section__category--2 {
   display: flex;
-  justify-content: right;
+  height: 70rem;
 }
-.clear-fix {
-  content: "";
-  display: table;
-  clear: both;
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: rotate(15deg);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
 }

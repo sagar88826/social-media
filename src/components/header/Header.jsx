@@ -39,15 +39,20 @@ const Header = () => {
           <Tiles />
         </div>
       </header>
-      <div className="category-1">
-        <Tiles />
-        ksdjfkj
-      </div>
-      <div className="categories-2">
-        sfdjkj
-        <h2 className="heading-secondary">Education</h2>
-        <Tiles />
-      </div>
+      <section className="section__categories">
+        <div className="section__category--1">
+          <Tiles />
+          <h2 className="heading-secondary heading-secondary--position-right">
+            Education
+          </h2>
+        </div>
+        <div className="section__category--2">
+          <h2 className="heading-secondary heading-secondary--position-left">
+            Bussiness
+          </h2>
+          <Tiles />
+        </div>
+      </section>
     </>
   );
 };
