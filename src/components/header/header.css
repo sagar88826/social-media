@@ -1,9 +1,9 @@
 .heading-primary {
-  font-family: "Great Vibes", cursive;
+  font-family: "Poppins";
   font-weight: 700;
 }
 .heading-primary--italic {
-  font-family: "Great Vibes", cursive;
+  font-family: "Poppins";
   font-size: 5rem;
   text-transform: capitalize;
 }
