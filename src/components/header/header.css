@@ -30,7 +30,10 @@
   margin-bottom: 5rem;
   animation: fadeUp 1s ease-in-out 0.5s;
   animation-fill-mode: backwards;
+  width: 180rem;
+  position: fixed;
 }
+
 .navigation__logo {
   height: 5rem;
   width: 5rem;
