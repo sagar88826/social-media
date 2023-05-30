@@ -1,0 +1,41 @@
+.alignment-center {
+  text-align: center;
+}
+
+.cover-photo {
+  /* border: 1px solid; */
+  height: 30rem;
+  width: 100rem;
+  margin: 0 auto;
+}
+.cover-image {
+  height: 100%;
+  width: 100%;
+}
+.profile-photo {
+  top: -10rem;
+  left: -30rem;
+  border-radius: 10rem;
+  outline: 1px solid #fff;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.profile-photo i {
+  position: absolute;
+  top: -4.5rem;
+  font-size: 20rem;
+}
+.timeline {
+  border: 1px solid;
+  margin-top: 12rem;
+}
+.timeline__card {
+  border: 1px solid;
+  height: 40rem;
+  width: 65rem;
+}
+.timeline__card--1 {
+}

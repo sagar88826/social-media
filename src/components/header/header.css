@@ -26,6 +26,11 @@
   animation: fadeIn 1.5s 1s;
   animation-fill-mode: backwards;
 }
+.heading-tertiary {
+  border-bottom: 1px solid #727272;
+  padding-bottom: 0.2rem;
+  font-family: "Poppins";
+}
 .navigation {
   margin-bottom: 5rem;
   animation: fadeUp 1s ease-in-out 0.5s;
