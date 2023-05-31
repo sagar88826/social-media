@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.css";
 import Tiles from "../tiles/Tiles";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -9,7 +10,9 @@ const Header = () => {
           <img src="images/logo.png" alt="logo" className="navigation__logo" />
           <ul className="navigation__option-box">
             <li className="navigation__list">Article</li>
-            <li className="navigation__list">People</li>
+            <li className="navigation__list">
+              <Link to="/homepage">People</Link>
+            </li>
             <li className="navigation__list">Stories</li>
           </ul>
         </nav>

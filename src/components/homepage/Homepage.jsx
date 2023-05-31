@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useRef } from "react";
 import "./Homepage.css";
+import { Link } from "react-router-dom";
 const Homepage = () => {
   const boxRef1 = useRef(null);
   const boxRef2 = useRef(null);
@@ -100,7 +101,9 @@ const Homepage = () => {
       <nav className="navigation">
         <img src="images/logo.png" alt="logo" className="navigation__logo" />
         <ul className="navigation__option-box">
-          <li className="navigation__list">Article</li>
+          <li className="navigation__list">
+            <Link to="/">Article</Link>
+          </li>
           <li className="navigation__list">People</li>
           <li className="navigation__list">Stories</li>
         </ul>
