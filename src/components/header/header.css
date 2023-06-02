@@ -37,6 +37,7 @@
   animation-fill-mode: backwards;
   width: 180rem;
   position: fixed;
+  z-index: 1;
 }
 
 .navigation__logo {

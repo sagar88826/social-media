@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./Introduction.css";
+import { Link } from "react-router-dom";
 const Introduction = () => {
   const boxRef1 = useRef(null);
   const boxRef2 = useRef(null);
@@ -87,19 +88,20 @@ const Introduction = () => {
           <div className="text">
             <p className="zoom-in-text">2023</p>
           </div>
+          <div className="background-fade"></div>
           <div className="main__user">
             <div className="main__dp main__dp--color-1">
               <i className="bi bi-person-circle"></i>
             </div>
             <p className="main__username main__username--color-1">
-              Sagar Mandal
+              <Link to="/homepage">Sagar Mandal</Link>
             </p>
           </div>
           <div className="main__content">
             <img
               src="images/pic-1.jpg"
               alt="pic-1"
-              className="main__post-image"
+              className="main__post-image main__post-image--background"
             />
           </div>
           <div className="main__interaction">

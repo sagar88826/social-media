@@ -103,3 +103,57 @@
   list-style: none;
   padding: 0.5rem;
 }
+
+.emojis-box {
+  position: relative;
+}
+.likes {
+  position: absolute;
+  top: -6rem;
+  left: -2.5rem;
+  border-radius: 2rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: #f7f7f7;
+  transition: all 0.4s;
+  opacity: 0;
+}
+.emojis {
+  position: absolute;
+  transform: scale(0.5);
+  opacity: 0;
+}
+.smile {
+  top: -2rem;
+  left: -2rem;
+  transition: all 0.2s;
+}
+.wow {
+  top: -2rem;
+  left: 0.5rem;
+  transition: all 0.3s;
+}
+.heart {
+  top: -2rem;
+  left: 3rem;
+  transition: all 0.4s;
+}
+.fire {
+  top: -2rem;
+  left: 5.5rem;
+  transition: all 0.5s;
+}
+.angry {
+  top: -2rem;
+  left: 7.5rem;
+  transition: all 0.6s;
+}
+.emojis-after-click {
+  top: -5.7rem;
+  transform: scale(1);
+  opacity: 1;
+}
+.like-expand {
+  width: 12.5rem;
+  opacity: 1;
+}

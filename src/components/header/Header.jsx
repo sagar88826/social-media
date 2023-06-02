@@ -11,7 +11,7 @@ const Header = () => {
           <ul className="navigation__option-box">
             <li className="navigation__list">Article</li>
             <li className="navigation__list">
-              <Link to="/homepage">People</Link>
+              <Link to="homepage">People</Link>
             </li>
             <li className="navigation__list">Stories</li>
           </ul>

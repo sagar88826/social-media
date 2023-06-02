@@ -38,6 +38,7 @@
 .box--position {
   opacity: 0;
   width: 60rem;
+  box-shadow: 0.7rem 0rem 1rem rgba(0, 0, 0, 0.266);
 }
 .box--position-1 {
   margin-left: 10rem;
@@ -58,19 +59,49 @@
 .zoom-in-text {
   text-align: center;
   /* border: 1px solid; */
-  top: 6rem;
-  left: -10rem;
-  /* height: 0; */
-  max-width: 1ch;
-  line-height: 10rem;
+  /* border-r: 5rem; */
+  /* box-shadow: -0.5rem 0 1rem rgba(0, 0, 0, 0.342); */
+  top: 5rem;
+  left: -14rem;
+  height: 45rem;
+  max-width: 2ch;
+  line-height: 20rem;
   overflow-wrap: break-word;
   /* word-wrap: break-word; */
   position: absolute;
   /* top: 10rem; */
   /* border: none; */
   /* letter-spacing: 0.2rem; */
-  font-size: 10rem;
+  font-size: 20rem;
   /* float: left; */
-  /* background-color: wheat; */
+  /* background-image: linear-gradient(
+    to right,
+    rgb(255, 208, 213),
+    rgba(255, 255, 255, 0)
+  ); */
   color: rebeccapurple;
+  z-index: 1;
+}
+.background-fade {
+  top: 7.2rem;
+  /* border: 1px solid; */
+  position: absolute;
+  height: 40.9rem;
+  width: 25rem;
+  border-radius: 2rem;
+  /* background-color: red; */
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 208, 213),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: 0;
+}
+.main__post-image--background {
+  /* background-image: linear-gradient(to right, black); */
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 208, 213),
+    rgba(255, 255, 255, 0.178)
+  );
 }

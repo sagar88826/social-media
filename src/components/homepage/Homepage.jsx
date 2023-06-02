@@ -1,8 +1,11 @@
-import React from "react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Homepage.css";
 import { Link } from "react-router-dom";
 const Homepage = () => {
+  const [emojisUp, setEmojisUp] = useState({
+    like: "",
+    emojis: "",
+  });
   const boxRef1 = useRef(null);
   const boxRef2 = useRef(null);
   const boxRef3 = useRef(null);
@@ -12,6 +15,17 @@ const Homepage = () => {
   const boxRef7 = useRef(null);
   const boxRef8 = useRef(null);
   const boxRef9 = useRef(null);
+  const reaction = () => {
+    emojisUp.emojis === "" && emojisUp.like === ""
+      ? setEmojisUp({
+          emojis: "emojis-after-click",
+          like: "like-expand",
+        })
+      : setEmojisUp({
+          emojis: "",
+          like: "",
+        });
+  };
   useEffect(() => {
     const box1 = boxRef1.current;
     const box2 = boxRef2.current;
@@ -23,7 +37,7 @@ const Homepage = () => {
     const box8 = boxRef8.current;
     const box9 = boxRef9.current;
     const addBackground = () => {
-      console.log(window.scrollY);
+      // console.log(window.scrollY);
       // 1
       if (window.scrollY < 10) {
         box1.style.transform = "translateY(-26rem) scale(.02)";
@@ -102,7 +116,7 @@ const Homepage = () => {
         <img src="images/logo.png" alt="logo" className="navigation__logo" />
         <ul className="navigation__option-box">
           <li className="navigation__list">
-            <Link to="/">Article</Link>
+            <Link to="/introduction">Article</Link>
           </li>
           <li className="navigation__list">People</li>
           <li className="navigation__list">Stories</li>
@@ -127,7 +141,18 @@ const Homepage = () => {
             />
           </div>
           <div className="main__interaction">
-            <i className="bi bi-balloon-heart main__icon main__icon--color-1"></i>
+            <i
+              onClick={reaction}
+              className="bi bi-balloon-heart main__icon main__icon--color-1"
+            ></i>
+            <div className="emojis-box">
+              <div className={`likes ${emojisUp.like}`}></div>
+              <div className={`emojis smile ${emojisUp.emojis}`}>😄</div>
+              <div className={`emojis wow ${emojisUp.emojis}`}>😯</div>
+              <div className={`emojis heart ${emojisUp.emojis}`}>❤️️</div>
+              <div className={`emojis fire ${emojisUp.emojis}`}>🔥</div>
+              <div className={`emojis angry ${emojisUp.emojis}`}>😡</div>
+            </div>
             <i className="bi bi-chat-left main__icon main__icon--color-1"></i>
             <i className="bi bi-share main__icon main__icon--color-1"></i>
           </div>
@@ -149,7 +174,18 @@ const Homepage = () => {
             />
           </div>
           <div className="main__interaction">
-            <i className="bi bi-balloon-heart main__icon main__icon--color-1"></i>
+            <i
+              onClick={reaction}
+              className="bi bi-balloon-heart main__icon main__icon--color-1"
+            ></i>
+            <div className="emojis-box">
+              <div className={`likes ${emojisUp.like}`}></div>
+              <div className={`emojis smile ${emojisUp.emojis}`}>😄</div>
+              <div className={`emojis wow ${emojisUp.emojis}`}>😯</div>
+              <div className={`emojis heart ${emojisUp.emojis}`}>❤️️</div>
+              <div className={`emojis fire ${emojisUp.emojis}`}>🔥</div>
+              <div className={`emojis angry ${emojisUp.emojis}`}>😡</div>
+            </div>
             <i className="bi bi-chat-left main__icon main__icon--color-1"></i>
             <i className="bi bi-share main__icon main__icon--color-1"></i>
           </div>
@@ -171,7 +207,18 @@ const Homepage = () => {
             />
           </div>
           <div className="main__interaction">
-            <i className="bi bi-balloon-heart main__icon main__icon--color-1"></i>
+            <i
+              onClick={reaction}
+              className="bi bi-balloon-heart main__icon main__icon--color-1"
+            ></i>
+            <div className="emojis-box">
+              <div className={`likes ${emojisUp.like}`}></div>
+              <div className={`emojis smile ${emojisUp.emojis}`}>😄</div>
+              <div className={`emojis wow ${emojisUp.emojis}`}>😯</div>
+              <div className={`emojis heart ${emojisUp.emojis}`}>❤️️</div>
+              <div className={`emojis fire ${emojisUp.emojis}`}>🔥</div>
+              <div className={`emojis angry ${emojisUp.emojis}`}>😡</div>
+            </div>
             <i className="bi bi-chat-left main__icon main__icon--color-1"></i>
             <i className="bi bi-share main__icon main__icon--color-1"></i>
           </div>
@@ -193,7 +240,18 @@ const Homepage = () => {
             />
           </div>
           <div className="main__interaction">
-            <i className="bi bi-balloon-heart main__icon main__icon--color-1"></i>
+            <i
+              onClick={reaction}
+              className="bi bi-balloon-heart main__icon main__icon--color-1"
+            ></i>
+            <div className="emojis-box">
+              <div className={`likes ${emojisUp.like}`}></div>
+              <div className={`emojis smile ${emojisUp.emojis}`}>😄</div>
+              <div className={`emojis wow ${emojisUp.emojis}`}>😯</div>
+              <div className={`emojis heart ${emojisUp.emojis}`}>❤️️</div>
+              <div className={`emojis fire ${emojisUp.emojis}`}>🔥</div>
+              <div className={`emojis angry ${emojisUp.emojis}`}>😡</div>
+            </div>
             <i className="bi bi-chat-left main__icon main__icon--color-1"></i>
             <i className="bi bi-share main__icon main__icon--color-1"></i>
           </div>
@@ -215,7 +273,18 @@ const Homepage = () => {
             />
           </div>
           <div className="main__interaction">
-            <i className="bi bi-balloon-heart main__icon main__icon--color-1"></i>
+            <i
+              onClick={reaction}
+              className="bi bi-balloon-heart main__icon main__icon--color-1"
+            ></i>
+            <div className="emojis-box">
+              <div className={`likes ${emojisUp.like}`}></div>
+              <div className={`emojis smile ${emojisUp.emojis}`}>😄</div>
+              <div className={`emojis wow ${emojisUp.emojis}`}>😯</div>
+              <div className={`emojis heart ${emojisUp.emojis}`}>❤️️</div>
+              <div className={`emojis fire ${emojisUp.emojis}`}>🔥</div>
+              <div className={`emojis angry ${emojisUp.emojis}`}>😡</div>
+            </div>
             <i className="bi bi-chat-left main__icon main__icon--color-1"></i>
             <i className="bi bi-share main__icon main__icon--color-1"></i>
           </div>
@@ -237,7 +306,18 @@ const Homepage = () => {
             />
           </div>
           <div className="main__interaction">
-            <i className="bi bi-balloon-heart main__icon main__icon--color-1"></i>
+            <i
+              onClick={reaction}
+              className="bi bi-balloon-heart main__icon main__icon--color-1"
+            ></i>
+            <div className="emojis-box">
+              <div className={`likes ${emojisUp.like}`}></div>
+              <div className={`emojis smile ${emojisUp.emojis}`}>😄</div>
+              <div className={`emojis wow ${emojisUp.emojis}`}>😯</div>
+              <div className={`emojis heart ${emojisUp.emojis}`}>❤️️</div>
+              <div className={`emojis fire ${emojisUp.emojis}`}>🔥</div>
+              <div className={`emojis angry ${emojisUp.emojis}`}>😡</div>
+            </div>
             <i className="bi bi-chat-left main__icon main__icon--color-1"></i>
             <i className="bi bi-share main__icon main__icon--color-1"></i>
           </div>
@@ -259,7 +339,18 @@ const Homepage = () => {
             />
           </div>
           <div className="main__interaction">
-            <i className="bi bi-balloon-heart main__icon main__icon--color-1"></i>
+            <i
+              onClick={reaction}
+              className="bi bi-balloon-heart main__icon main__icon--color-1"
+            ></i>
+            <div className="emojis-box">
+              <div className={`likes ${emojisUp.like}`}></div>
+              <div className={`emojis smile ${emojisUp.emojis}`}>😄</div>
+              <div className={`emojis wow ${emojisUp.emojis}`}>😯</div>
+              <div className={`emojis heart ${emojisUp.emojis}`}>❤️️</div>
+              <div className={`emojis fire ${emojisUp.emojis}`}>🔥</div>
+              <div className={`emojis angry ${emojisUp.emojis}`}>😡</div>
+            </div>
             <i className="bi bi-chat-left main__icon main__icon--color-1"></i>
             <i className="bi bi-share main__icon main__icon--color-1"></i>
           </div>
@@ -281,7 +372,18 @@ const Homepage = () => {
             />
           </div>
           <div className="main__interaction">
-            <i className="bi bi-balloon-heart main__icon main__icon--color-1"></i>
+            <i
+              onClick={reaction}
+              className="bi bi-balloon-heart main__icon main__icon--color-1"
+            ></i>
+            <div className="emojis-box">
+              <div className={`likes ${emojisUp.like}`}></div>
+              <div className={`emojis smile ${emojisUp.emojis}`}>😄</div>
+              <div className={`emojis wow ${emojisUp.emojis}`}>😯</div>
+              <div className={`emojis heart ${emojisUp.emojis}`}>❤️️</div>
+              <div className={`emojis fire ${emojisUp.emojis}`}>🔥</div>
+              <div className={`emojis angry ${emojisUp.emojis}`}>😡</div>
+            </div>
             <i className="bi bi-chat-left main__icon main__icon--color-1"></i>
             <i className="bi bi-share main__icon main__icon--color-1"></i>
           </div>
@@ -303,7 +405,18 @@ const Homepage = () => {
             />
           </div>
           <div className="main__interaction">
-            <i className="bi bi-balloon-heart main__icon main__icon--color-1"></i>
+            <i
+              onClick={reaction}
+              className="bi bi-balloon-heart main__icon main__icon--color-1"
+            ></i>
+            <div className="emojis-box">
+              <div className={`likes ${emojisUp.like}`}></div>
+              <div className={`emojis smile ${emojisUp.emojis}`}>😄</div>
+              <div className={`emojis wow ${emojisUp.emojis}`}>😯</div>
+              <div className={`emojis heart ${emojisUp.emojis}`}>❤️️</div>
+              <div className={`emojis fire ${emojisUp.emojis}`}>🔥</div>
+              <div className={`emojis angry ${emojisUp.emojis}`}>😡</div>
+            </div>
             <i className="bi bi-chat-left main__icon main__icon--color-1"></i>
             <i className="bi bi-share main__icon main__icon--color-1"></i>
           </div>
